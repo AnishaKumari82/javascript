@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body id="geek">
+    <p >THis is para one and i m learning js</p>
+    <p> This is para 2 </p>
+    <div style="color:yellow">
+        hello world
+    </div>
+    <h1>query selector</h1>
+    <button onClick="myfunc()">try it</button>
+    <script> 
+        function myfunc(){
+           let el= document.getElementById("geek");
+           let e= el.querySelectorAll("h1")
+           for(let i =0 ; i< e.length; i++) {
+           e[i].style.backgroundColor="green";
+           e[i].style.color="white";
+           }
+
+        }
+    </script>
+
+
+</body>
+</html>
